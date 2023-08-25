@@ -113,7 +113,7 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-
+  let options = getPasswordOptions();
 }
 
 // Get references to the #generate element
