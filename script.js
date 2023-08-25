@@ -95,10 +95,12 @@ function getPasswordOptions() {
   let length=parseInt(
     prompt("How many characters would you like your password to contain (between 10 and 64)?")
   )
-  if (length<10) {
-    prompt("Password is too short")
+  if (isNaN(length) === true){
+    alert("Password length must be a number between 10 and 64")
+  }  else if (length<10) {
+    alert("Password is too short")
   }  else if (length>64){ 
-    prompt("Password is too long")
+    alert("Password is too long")
   } else {}
 }
 
