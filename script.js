@@ -97,11 +97,18 @@ function getPasswordOptions() {
   )
   if (isNaN(length) === true){
     alert("Password length must be a number between 10 and 64")
-  }  else if (length<10) {
+    return;
+  }  
+  
+  if (length<10) {
     alert("Password is too short")
-  }  else if (length>64){ 
+  return;
+  }
+
+  if (length>64){ 
     alert("Password is too long")
-  } else {}
+  return;
+}
 }
 
 // Function for getting a random element from an array
