@@ -164,7 +164,13 @@ let result = []
 let possChar = []
 
 let mustChar = []
- 
+
+if (options.hasSpecial) {
+  possChar = possChar.concat(specialCharacters);
+  mustChar = mustChar.concat(specialCharacters);
+}
+
+
 
 
 }
