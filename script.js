@@ -186,11 +186,12 @@ if(options.hasNumber) {
 }
 
 for (i = 0; i < options.length; i++) {
-  possChar = getRandom(possChar);
+  let generated = getRandom(possChar);
 
-  result.push(possChar);
+  result.push(generated);
 }
 
+console.log(result);
 
 }
 
