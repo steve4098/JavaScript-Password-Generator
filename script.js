@@ -175,6 +175,16 @@ if(options.hasUpper) {
   mustChar.push(getRandom(upperCasedCharacters))
 }
 
+if(options.hasLower) {
+  possChar = possChar.concat(lowerCasedCharacters);
+  mustChar.push(getRandom(lowerCasedCharacters))
+}
+
+if(options.hasNumber) {
+  possChar = possChar.concat(numericCharacters);
+  mustChar.push(getRandom(numericCharacters))
+}
+
 console.log(possChar);
 console.log(mustChar);
 
