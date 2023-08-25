@@ -134,6 +134,15 @@ function getPasswordOptions() {
   return;
   }
 
+  let passwordOptions = {
+    length: length,
+    hasSpecial: hasSpecial,
+    hasUpper: hasUpper,
+    hasLower: hasLower,
+    hasNumber: hasNumber
+  }
+
+  console.log(passwordOptions);
 
 }
 
