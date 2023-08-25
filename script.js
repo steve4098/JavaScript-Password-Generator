@@ -95,7 +95,11 @@ function getPasswordOptions() {
   let length=parseInt(
     prompt("How many characters would you like your password to contain (between 10 and 64)?")
   )
-
+  if (length<10) {
+    prompt("Password is too short")
+  }  else if (length>64){ 
+    prompt("Password is too long")
+  } else {}
 }
 
 // Function for getting a random element from an array
