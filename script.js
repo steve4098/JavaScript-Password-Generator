@@ -130,6 +130,10 @@ function getPasswordOptions() {
   let hasNumber = confirm(
     "Click OK to include numerical characters (cancel to exclude them)"
   )
+
+  if (hasNumber === false && hasLower === false && hasUpper === false && hasSpecial === false) {
+    alert("You must select at least one character type")
+  }
 }
 
 // Function for getting a random element from an array
