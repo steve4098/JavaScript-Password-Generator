@@ -110,11 +110,26 @@ function getPasswordOptions() {
   return;
   }
 
-  if (9<length>65){
-    writePassword
-    return;
-  }
+  // if (9<length>65){
+  //   writePassword
+  //   return;
+  // }
 
+  let hasSpecial = confirm(
+    "Click OK to include special characters (cancel to exclude them)"
+  )
+
+  let hasUpper = confirm(
+    "Click OK to include upper case characters (cancel to exclude them)"
+  )
+
+  let hasLower = confirm(
+    "Click OK to include lower case characters (cancel to exclude them)"
+  )
+
+  let hasNumber = confirm(
+    "Click OK to include numerical characters (cancel to exclude them)"
+  )
 }
 
 // Function for getting a random element from an array
