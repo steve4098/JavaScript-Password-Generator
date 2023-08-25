@@ -142,7 +142,7 @@ function getPasswordOptions() {
     hasNumber: hasNumber
   }
 
-  console.log(passwordOptions);
+  return passwordOptions;
 
 }
 
@@ -158,6 +158,15 @@ function getRandom(arr) {
 // Function to generate password with user input
 function generatePassword() {
   let options = getPasswordOptions();
+
+let result = []
+
+let possChar = []
+
+let mustChar = []
+ 
+
+
 }
 
 // Get references to the #generate element
