@@ -108,7 +108,13 @@ function getPasswordOptions() {
   if (length>64){ 
     alert("Password is too long")
   return;
-}
+  }
+
+  if (9<length>65){
+    writePassword
+    return;
+  }
+
 }
 
 // Function for getting a random element from an array
