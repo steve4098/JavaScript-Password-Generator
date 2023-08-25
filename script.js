@@ -167,10 +167,16 @@ let mustChar = []
 
 if (options.hasSpecial) {
   possChar = possChar.concat(specialCharacters);
-  mustChar = mustChar.concat(specialCharacters);
+  mustChar.push(getRandom(specialCharacters))
 }
 
+if(options.hasUpper) {
+  possChar = possChar.concat(upperCasedCharacters);
+  mustChar.push(getRandom(upperCasedCharacters))
+}
 
+console.log(possChar);
+console.log(mustChar);
 
 
 }
