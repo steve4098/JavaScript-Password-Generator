@@ -185,8 +185,11 @@ if(options.hasNumber) {
   mustChar.push(getRandom(numericCharacters))
 }
 
-console.log(possChar);
-console.log(mustChar);
+for (i = 0; i < options.length; i++) {
+  possChar = getRandom(possChar);
+
+  result.push(possChar);
+}
 
 
 }
