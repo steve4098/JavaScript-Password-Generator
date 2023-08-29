@@ -185,14 +185,15 @@ if(options.hasNumber) {
   mustChar.push(getRandom(numericCharacters))
 }
 
-for (i = 0; i < options.length; i++) {
-  let generated = getRandom(possChar);
-
+for (let i = 0; i < options.length; i++) {
+  var generated = getRandom(possChar);
   result.push(generated);
+
 }
 
-console.log(result);
 
+console.log(result);
+ return result
 }
 
 // Get references to the #generate element
